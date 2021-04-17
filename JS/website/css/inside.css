@@ -1,0 +1,12 @@
+body{
+    /* background-image: url(../img/space.gif); */
+    background-color:black;
+}
+
+#moon{
+    margin: auto;
+    background-image: url(../img/darkmoon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
