@@ -6,7 +6,7 @@ let leftEye = ["images/eyes/left/eye1.png", "images/eyes/left/eye2.png", "images
 
 let mouth = ["images/mouth/lips1.png", "images/mouth/lips2.png", "images/mouth/lips3.png", "images/mouth/lips4.png", "images/mouth/lips5.png", "images/mouth/lips6.png", "images/mouth/lips7.png", "images/mouth/lips8.png", "images/mouth/lips9.png", "images/mouth/lips10.png", "images/mouth/lips11.png", "images/mouth/lips12.png", "images/mouth/lips13.png", "images/mouth/lips14.png", "images/mouth/lips15.png"];
 
-let nose = ["images/nose/nose1.png", "images/nose/nose2.png", "images/nose/nose3.png", "images/nose/nose4.png", "images/nose/nose5.png", "images/nose/nose6.png", "images/nose/nose7.png", "images/nose/nose8.png", "images/nose/nose9.png", "images/nose/nose10.png", "images/nose/nose11.png", "images/nose/nose12.png"];
+let nose = ["images/nose/nose1.png", "images/nose/nose2.png", "images/nose/nose3.png", "images/nose/nose6.png", "images/nose/nose7.png", "images/nose/nose8.png", "images/nose/nose9.png", "images/nose/nose10.png", "images/nose/nose11.png", "images/nose/nose12.png"];
 
 
 //grab html elements
@@ -35,9 +35,13 @@ function idontlike() {
     randomRE = Math.floor(Math.random()*rightEyebrow.length);
     rightBrowDiv.innerHTML = '<img src="'+rightEyebrow[randomRE]+'">';
 
-        //random number picks from Left Eye array
-    // randomLeye = Math.floor(Math.random()*leftEye.length);
-    // leftEyeDiv.innerHTML = '<img src="'+leftEyebrow[randomLeye]+'">';
+    //random number picks from Left Eye array
+    randomLeye = Math.floor(Math.random()*leftEye.length);
+    leftEyeDiv.innerHTML = '<img src="'+leftEye[randomLeye]+'">';
+
+    //random number picks from right Eye array
+    randomReye = Math.floor(Math.random()*rightEye.length);
+    rightEyeDiv.innerHTML = '<img src="'+rightEye[randomReye]+'">';
 
 
     //random number picks from nose array

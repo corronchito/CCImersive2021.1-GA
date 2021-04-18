@@ -4,7 +4,11 @@
 }
 
 body{
-    background-color: aqua;
+    background-image: url(images/skin.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
 }
 
 img{
@@ -13,13 +17,34 @@ img{
     margin: auto;
 }
 
-#main-container{
+#face-container{
+
+    height: 75vh;
 }
 
 h2, h1 {
     margin: auto;
-    border: solid black;
     text-align: center;
+}
+
+#ugly{
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 3em;
+}
+
+#noproblem{
+    font-family: 'Quantico', sans-serif;    
+    font-size: 4em;
+}
+
+#generate{
+    margin-bottom: 5%;
+    font-family: 'Quantico', sans-serif;    
+    font-size: 2em;
+}
+
+span#face{
+    font-style: italic;
 }
 
 #vertical-center{
@@ -33,13 +58,22 @@ h2, h1 {
 button {
     border: solid black 3px;
     border-radius: 2em;
-    font-size: 2em;
+    font-size: 5vw;
     padding: 0.5em;
-
+    margin-top: 35vh;
+    margin-left: 80%;
+    margin-right: 1%;
+    position: fixed;
+    cursor: url(images/sad.png), auto;
 }
 
-#face-container{
-    height: 70vh;
+button:hover{
+    box-shadow: 0 10px 5px 0 black;
+    /* background-color: pink; */
+}
+
+button:active{
+    background-color: rgb(185, 184, 185);
 }
 
 #eyes{
@@ -48,20 +82,36 @@ button {
 }
 
 #left-eyebrow, #right-eyebrow{
-    border: solid salmon;
     height: 10vh;
     width: 200px;
+    text-align: center;
+}
+
+#left-eyebrow{
+    margin-right: 3%;
+}
+
+#right-eyebrow{
+    margin-left: 3%;
 }
 
 #left-eye, #right-eye{
-    border: solid red;
-    height: 10vh;
+    height: 100px;
     width: 200px;
-    z-index: 5;
+    text-align: center;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#left-eye{
+    margin-left: -30vw;
+}
+
+#right-eye{
+    margin-right: -30vw;
 }
 
 #nose{
-    border: solid salmon;
     height: 25vh;
     width: 150px;
     margin: auto;
@@ -69,11 +119,10 @@ button {
 }
 
 #mouth {
-    border: solid salmon;
-    height: 15vh;
+    height: 20vh;
     width: 300px;
     margin: auto;
-    margin-top: 5%;
+    text-align: center;
 }
 
 

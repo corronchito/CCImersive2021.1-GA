@@ -4,24 +4,25 @@
   <head>
     <title>Face Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Press+Start+2P&family=Quantico:ital,wght@0,700;1,700&display=swap" rel="stylesheet"> 
   </head>
 
   <body>
-
-    <div id="main-container">
-        <h2>Feeling ugly?</h2>
-        <h1>NO PROBLEM!</h1>
-        <h2>Go ahead and generate a NEW FACE.</h2>
+    <div id="vertical-center">
+      <button id = "dontlike" onclick="idontlike()">I don't like it.</button>
+    </div>
+        <h2 id="ugly">Feeling ugly?</h2>
+        <h1 id="noproblem">NO PROBLEM!</h1>
+        <h2 id="generate">Go ahead and generate a <span id="face"> NEW FACE!</span></span></h2>
 
         <div id="face-container">
 
           <div id="eyes">
-            <div id="left-eyebrow">
-                <div id="left-eye"></div>
-            </div>
-            <div id="right-eyebrow">
-                <div id="right-eye"></div>
-            </div>
+            <div id="left-eyebrow"></div>
+            <div id="left-eye"></div>
+            <div id="right-eyebrow"></div>
+            <div id="right-eye"></div>
           </div>
 
             <div id="nose"></div>
@@ -29,13 +30,6 @@
             <div id="mouth"></div>
         </div>
 
-        <div id="vertical-center">
-          <button id = "dontlike" onclick="idontlike()">I don't like it.</button>
-
-          <!-- <button onclick= "dontlike()">I don't like it.</button> -->
-        </div>
-
-    </div>
     <script src='script.js'></script>
   </body>
   </html>
