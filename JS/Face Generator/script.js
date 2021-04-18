@@ -17,17 +17,43 @@ let leftBrowDiv = document.getElementById('left-eyebrow'),
     noseDiv = document.getElementById('nose'),
     mouthDiv = document.getElementById('mouth'),
     button = document.getElementById('dontlike'),
-    randomLE;
+    randomLE, randomLeye,
+    randomRE, randomReye,
+    randomNose,
+    randomMouth;
 
 //generate random eye on load
-window.onload = randomLeftEyebrow;
-button.addEventListener('click', randomLeftEyebrow);
+window.onload = idontlike();
 
 
-function randomLeftEyebrow() {
-    //random number picks from array
+function idontlike() {
+    //random number picks from Left Eyebrow array
     randomLE = Math.floor(Math.random()*leftEyebrow.length);
-    leftBrowDiv.style.backgroundImage = leftEyebrow[randomLE];
+    leftBrowDiv.innerHTML = '<img src="'+leftEyebrow[randomLE]+'">';
+
+    //random number picks from Right Eyebrow array
+    randomRE = Math.floor(Math.random()*rightEyebrow.length);
+    rightBrowDiv.innerHTML = '<img src="'+rightEyebrow[randomRE]+'">';
+
+        //random number picks from Left Eye array
+    // randomLeye = Math.floor(Math.random()*leftEye.length);
+    // leftEyeDiv.innerHTML = '<img src="'+leftEyebrow[randomLeye]+'">';
+
+
+    //random number picks from nose array
+    randomNose = Math.floor(Math.random()*nose.length);
+    noseDiv.innerHTML = '<img src="'+nose[randomNose]+'">';
+
+    //random number picks from mouth array
+    randomMouth = Math.floor(Math.random()*mouth.length);
+    mouthDiv.innerHTML = '<img src="'+mouth[randomMouth]+'">';
+
+
 }
+
+
+
+
+
 
 
