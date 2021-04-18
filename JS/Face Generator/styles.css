@@ -68,12 +68,17 @@ button {
 }
 
 button:hover{
+    background-image: url(images/lava.gif);
+    color: whitesmoke;
     box-shadow: 0 10px 5px 0 black;
+    font-size: 5vw;
+    font-family: 'Metal Mania', 'Astloch', cursive;
     /* background-color: pink; */
 }
 
 button:active{
-    background-color: rgb(185, 184, 185);
+    
+    box-shadow: 0 10px 5px 10px black;
 }
 
 #eyes{
